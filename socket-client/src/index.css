@@ -1,0 +1,93 @@
+/* App styling for full-screen chat layout */
+body {
+  margin: 0;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #242424;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  height: 90vh;
+  background-color: #333;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.header, .footer {
+  padding: 1rem;
+  background-color: #1a1a1a;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.messages {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  background-color: #242424;
+}
+
+.message {
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+
+.message .sender {
+  font-weight: bold;
+  color: #e1e1e1;
+}
+
+.message .time {
+  color: #aaa;
+  font-size: 0.8rem;
+  margin-left: 8px;
+}
+
+.message .content {
+  margin-top: 0.2rem;
+  color: #f1f1f1;
+}
+
+.footer {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.footer input {
+  padding: 0.5rem;
+  flex: 1;
+  border: 1px solid #555;
+  border-radius: 4px;
+  background-color: #444;
+  color: #fff;
+}
+
+.footer button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #646cff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.footer button:hover {
+  background-color: #535bf2;
+}
